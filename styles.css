@@ -573,6 +573,41 @@ h2 {
   line-height: 1.65;
 }
 
+.course-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  margin-top: 0.25rem;
+}
+
+.course-list li {
+  font-size: 0.875rem;
+  color: #374151;
+  padding-left: 1rem;
+  position: relative;
+  line-height: 1.4;
+}
+
+.course-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.52em;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #9ca3af;
+}
+
+.course-code {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #6b7280;
+  letter-spacing: 0.03em;
+  margin-right: 0.4rem;
+}
+
 /* === Resume Band === */
 .resume-band {
   background: #f0f4e6;
