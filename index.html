@@ -5,14 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bo Erholtz | Strategy, Analytics & Growth</title>
   <meta name="description" content="Portfolio of Bo Erholtz, a strategy, analytics, and growth-focused business student at the University of Minnesota Carlson School of Management." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
   <header class="site-header">
     <nav class="nav">
       <a href="#top" class="logo">Bo Erholtz</a>
       <div class="nav-links">
-        <a href="#top">Home</a>
         <a href="#about">About</a>
         <a href="#work">Work</a>
         <a href="#experience">Experience</a>
@@ -24,152 +27,255 @@
   </header>
 
   <main id="top">
-    <section class="hero section">
-      <div class="hero-copy">
-        <p class="eyebrow">Strategy • Analytics • Growth</p>
-        <h1>Turning complex business questions into clear, actionable recommendations.</h1>
-        <p class="hero-text">Graduating senior at the University of Minnesota Carlson School of Management studying Marketing, Business Analytics, and Entrepreneurial Management. My work sits at the intersection of market research, data analysis, growth strategy, and business storytelling.</p>
-        <div class="button-row">
-          <a class="button primary" href="#work">View Work</a>
-          <a class="button secondary" href="#about">About Me</a>
+
+    <!-- Hero -->
+    <section class="hero-section">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Strategy · Analytics · Growth</p>
+          <h1>Turning complex business questions into clear, actionable recommendations.</h1>
+          <p class="hero-text">Graduating senior at the University of Minnesota Carlson School of Management — triple majoring in Marketing, Business Analytics, and Entrepreneurial Management.</p>
+          <div class="button-row">
+            <a class="button primary" href="#work">View Work</a>
+            <a class="button secondary" href="#contact">Get in Touch</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat"><strong>3.8</strong><span>GPA</span></div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat"><strong>3×</strong><span>Major</span></div>
+            <div class="hero-stat-divider"></div>
+            <div class="hero-stat"><strong>4+</strong><span>Roles</span></div>
+          </div>
         </div>
-      </div>
-      <div class="hero-panel" aria-label="Portfolio summary visual">
-        <div class="mini-card wide">
-          <span class="label">Positioning</span>
-          <strong>Business strategy, insights, and decision support</strong>
-        </div>
-        <div class="mini-grid">
-          <div class="mini-card"><span class="label">Tools</span><strong>Excel<br>R<br>SQL<br>Tableau</strong></div>
-          <div class="mini-card"><span class="label">Experience</span><strong>Corporate<br>Startup<br>Consulting</strong></div>
+        <div class="hero-photo-wrap">
+          <div class="hero-photo-bg"></div>
+          <img class="hero-photo" src="assets/headshot.jpg" alt="Bo Erholtz" />
         </div>
       </div>
     </section>
 
-    <section class="stats section compact">
-      <div class="stat-card"><span>Triple Major</span><strong>Marketing • Business Analytics • Entrepreneurial Management</strong></div>
-      <div class="stat-card"><span>GPA</span><strong>3.8</strong></div>
-      <div class="stat-card"><span>Career Direction</span><strong>Strategy, analytics, growth, and insights</strong></div>
-      <div class="stat-card"><span>Strength</span><strong>Structuring ambiguity into recommendations</strong></div>
-    </section>
-
-    <section id="about" class="section split-section">
-      <div>
-        <p class="eyebrow">About</p>
-        <h2>I’m a strategy and analytics-focused business student who likes turning ambiguity into direction.</h2>
+    <!-- Tools band -->
+    <div class="tools-band">
+      <div class="tools-inner">
+        <span class="tools-label">Core Tools</span>
+        <div class="tools-list">
+          <span>Excel</span>
+          <span>R</span>
+          <span>SQL</span>
+          <span>Tableau</span>
+          <span>Salesforce</span>
+          <span>SEO Research</span>
+          <span>Financial Modeling</span>
+          <span>Market Research</span>
+        </div>
       </div>
-      <div class="stacked-copy">
-        <p>I’m graduating soon from the University of Minnesota Carlson School of Management, where I am triple majoring in Marketing, Business Analytics, and Entrepreneurial Management. Across internships, consulting-style projects, and venture coursework, I’ve learned that I’m most energized by work that starts with a messy question and ends with a clear recommendation.</p>
-        <p>My experience spans market intelligence, digital strategy, workforce analysis, consumer research, business modeling, and early-stage venture planning. I’m especially interested in roles across strategy, analytics, growth, insights, and business operations where I can connect research, data, and decision-making.</p>
-        <div class="about-card-grid">
-          <article class="about-card"><h3>Pattern finder</h3><p>I like comparing signals across sources, whether that means competitor messaging, labor markets, customer behavior, or campaign data.</p></article>
-          <article class="about-card"><h3>Builder of structure</h3><p>I turn broad questions into frameworks, models, timelines, and recommendations that make the next decision easier.</p></article>
-          <article class="about-card"><h3>Business storyteller</h3><p>I care about making analysis usable through clear writing, visuals, and presentations that connect the insight to the decision.</p></article>
+    </div>
+
+    <!-- About -->
+    <section id="about" class="section">
+      <p class="eyebrow">About</p>
+      <h2 class="about-headline">I turn ambiguity into direction.</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>I'm graduating from the University of Minnesota Carlson School of Management, triple majoring in Marketing, Business Analytics, and Entrepreneurial Management. Across internships, consulting-style projects, and venture coursework, I've learned that I'm most energized by work that starts with a messy question and ends with a clear recommendation.</p>
+          <p>My experience spans market intelligence, digital strategy, workforce analysis, consumer research, business modeling, and early-stage venture planning. I'm especially interested in roles in strategy, analytics, growth, and insights where I can connect research, data, and decision-making.</p>
+        </div>
+        <div class="about-cards">
+          <article class="about-card">
+            <div class="about-card-bar bar-green"></div>
+            <h3>Pattern Finder</h3>
+            <p>I identify signals across competitors, markets, labor data, and consumer behavior to find what others miss.</p>
+          </article>
+          <article class="about-card">
+            <div class="about-card-bar bar-blue"></div>
+            <h3>Structure Builder</h3>
+            <p>I convert broad questions into frameworks, models, and timelines that make the next decision easier.</p>
+          </article>
+          <article class="about-card">
+            <div class="about-card-bar bar-amber"></div>
+            <h3>Business Storyteller</h3>
+            <p>I make analysis usable through clear writing, visuals, and presentations that connect insight to action.</p>
+          </article>
         </div>
       </div>
     </section>
 
+    <!-- Work -->
     <section id="work" class="section">
       <div class="section-heading">
         <p class="eyebrow">Work</p>
-        <h2>Selected strategy, analytics, and innovation projects</h2>
-        <p>These case studies are structured to show the business question, approach, analysis, and recommendation. Employer projects are written at a sanitized level and do not include confidential data.</p>
+        <h2>Selected projects</h2>
+        <p>Strategy, analytics, and innovation case studies. Employer work is written at a sanitized level and does not include confidential data.</p>
       </div>
-
       <div class="project-grid">
+
         <article class="project-card">
-          <span class="tag">Corporate Strategy</span>
-          <h3>National Recruiting Market Strategy</h3>
-          <p>Built a market prioritization framework to identify strong U.S. recruiting markets using labor, wage, growth, and demand signals.</p>
-          <small>Tools: Excel, labor market research, market prioritization</small>
+          <div class="card-visual v-strategy"></div>
+          <div class="card-body">
+            <span class="tag">Corporate Strategy</span>
+            <h3>National Recruiting Market Strategy</h3>
+            <p>Built a market prioritization framework to identify strong U.S. recruiting markets using labor, wage, growth, and demand signals.</p>
+            <small>Excel · labor market research · market prioritization</small>
+          </div>
         </article>
 
         <article class="project-card">
-          <span class="tag">Analytics</span>
-          <h3>LLM Consumer Behavior Analytics</h3>
-          <p>Analyzed large-scale digital behavior data to examine how generative AI adoption shifted consumer app usage patterns.</p>
-          <small>Tools: R, data cleaning, cohort analysis, visualization</small>
+          <div class="card-visual v-analytics"></div>
+          <div class="card-body">
+            <span class="tag">Analytics</span>
+            <h3>LLM Consumer Behavior Analytics</h3>
+            <p>Analyzed large-scale digital behavior data to examine how generative AI adoption shifted consumer app usage patterns.</p>
+            <small>R · cohort analysis · data visualization</small>
+          </div>
         </article>
 
         <article class="project-card">
-          <span class="tag">Entrepreneurship</span>
-          <h3>Rotation Venture Strategy</h3>
-          <p>Developed a mock investor-ready business plan for a consumer subscription app focused on wardrobe analytics and spending optimization.</p>
-          <small>Tools: financial modeling, business planning, GTM strategy</small>
+          <div class="card-visual v-entrepreneurship"></div>
+          <div class="card-body">
+            <span class="tag">Entrepreneurship</span>
+            <h3>Rotation Venture Strategy</h3>
+            <p>Developed an investor-ready business plan for a consumer subscription app focused on wardrobe analytics and spending optimization.</p>
+            <small>Financial modeling · business planning · GTM strategy</small>
+          </div>
         </article>
 
         <article class="project-card">
-          <span class="tag">Market Intelligence</span>
-          <h3>Competitive Growth Intelligence</h3>
-          <p>Benchmarked competitor digital strategy across SEO, messaging, paid media, and web presence to identify growth opportunities.</p>
-          <small>Tools: SEO research, competitive analysis, digital strategy</small>
+          <div class="card-visual v-intelligence"></div>
+          <div class="card-body">
+            <span class="tag">Market Intelligence</span>
+            <h3>Competitive Growth Intelligence</h3>
+            <p>Benchmarked competitor digital strategy across SEO, messaging, paid media, and web presence to identify growth opportunities.</p>
+            <small>SEO research · competitive analysis · digital strategy</small>
+          </div>
         </article>
 
         <article class="project-card">
-          <span class="tag">Innovation</span>
-          <h3>Smart Circadian Lamp</h3>
-          <p>Designed a connected product concept using calendar data and circadian lighting logic to support productivity and daily workflows.</p>
-          <small>Tools: product concepting, user flows, visual prototyping</small>
+          <div class="card-visual v-innovation"></div>
+          <div class="card-body">
+            <span class="tag">Innovation</span>
+            <h3>Smart Circadian Lamp</h3>
+            <p>Designed a connected product concept using calendar data and circadian lighting logic to support productivity and daily workflows.</p>
+            <small>Product concepting · user flows · visual prototyping</small>
+          </div>
         </article>
 
         <article class="project-card">
-          <span class="tag">Consulting</span>
-          <h3>Strategic Consulting Project</h3>
-          <p>Developed research-backed recommendations through market analysis, stakeholder framing, and structured implementation planning.</p>
-          <small>Tools: market research, stakeholder analysis, strategic planning</small>
+          <div class="card-visual v-consulting"></div>
+          <div class="card-body">
+            <span class="tag">Consulting</span>
+            <h3>Strategic Consulting Project</h3>
+            <p>Developed research-backed recommendations through market analysis, stakeholder framing, and structured implementation planning.</p>
+            <small>Market research · stakeholder analysis · strategic planning</small>
+          </div>
         </article>
+
       </div>
     </section>
 
-    <section id="experience" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Experience</p>
-        <h2>Experience across corporate marketing, operations, research, and teaching</h2>
-      </div>
-      <div class="timeline">
-        <article class="timeline-item"><h3>Daikin Applied Americas</h3><p class="meta">Marketing Specialist Intern; Aftermarket Sales Operations Intern</p><p>Supported digital strategy, competitive intelligence, campaign development, sales operations, and data-driven market analysis in a B2B environment.</p></article>
-        <article class="timeline-item"><h3>Minnesota Technical Assistance Program</h3><p class="meta">Student Administrative Assistant</p><p>Coordinate operational workflows, support internship processes, maintain Salesforce records, and help prepare accessible materials.</p></article>
-        <article class="timeline-item"><h3>University of Minnesota Carlson School of Management</h3><p class="meta">Teaching Assistant</p><p>Supported course delivery, grading workflows, student communication, and classroom materials for business coursework.</p></article>
-        <article class="timeline-item"><h3>University of Minnesota Center for Bioethics</h3><p class="meta">Marketing and Event Assistant</p><p>Supported communications, webinar promotion, event logistics, audience engagement, and social content for an academic center.</p></article>
-      </div>
-    </section>
+    <!-- Experience -->
+    <div class="experience-band">
+      <section id="experience" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Experience</p>
+          <h2>Where I've worked</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Daikin Applied Americas</h3>
+              <p class="meta">Marketing Specialist Intern · Aftermarket Sales Operations Intern</p>
+              <p>Supported digital strategy, competitive intelligence, campaign development, sales operations, and data-driven market analysis in a B2B manufacturing environment.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>Minnesota Technical Assistance Program</h3>
+              <p class="meta">Student Administrative Assistant</p>
+              <p>Coordinated operational workflows, supported internship processes, maintained Salesforce records, and helped prepare accessible materials.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>University of Minnesota Carlson School of Management</h3>
+              <p class="meta">Teaching Assistant</p>
+              <p>Supported course delivery, grading workflows, student communication, and classroom materials for business coursework.</p>
+            </div>
+          </article>
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3>University of Minnesota Center for Bioethics</h3>
+              <p class="meta">Marketing and Event Assistant</p>
+              <p>Supported communications, webinar promotion, event logistics, audience engagement, and social content for an academic center.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
 
+    <!-- Coursework -->
     <section id="coursework" class="section">
       <div class="section-heading">
         <p class="eyebrow">Coursework</p>
-        <h2>Academic foundation across strategy, analytics, marketing, and leadership</h2>
+        <h2>Academic foundation</h2>
         <p>Representative coursework grouped by the capabilities it helped build.</p>
       </div>
       <div class="course-grid">
-        <article class="course-card"><h3>Strategy & Entrepreneurship</h3><p>Innovation, venture planning, business model design, competitive strategy, and growth planning.</p></article>
-        <article class="course-card"><h3>Analytics & Technical Skills</h3><p>Business analytics, SQL, R, data visualization, statistical thinking, and decision support.</p></article>
-        <article class="course-card"><h3>Marketing & Consumer Insights</h3><p>Digital marketing, marketing channels, consumer research, segmentation, positioning, and campaign strategy.</p></article>
-        <article class="course-card"><h3>Leadership & Communication</h3><p>Negotiation, team leadership, professional communication, consulting-style presentations, and executive storytelling.</p></article>
+        <article class="course-card">
+          <div class="course-accent accent-green"></div>
+          <h3>Strategy & Entrepreneurship</h3>
+          <p>Innovation, venture planning, business model design, competitive strategy, and growth planning.</p>
+        </article>
+        <article class="course-card">
+          <div class="course-accent accent-blue"></div>
+          <h3>Analytics & Technical Skills</h3>
+          <p>Business analytics, SQL, R, data visualization, statistical thinking, and decision support.</p>
+        </article>
+        <article class="course-card">
+          <div class="course-accent accent-amber"></div>
+          <h3>Marketing & Consumer Insights</h3>
+          <p>Digital marketing, marketing channels, consumer research, segmentation, positioning, and campaign strategy.</p>
+        </article>
+        <article class="course-card">
+          <div class="course-accent accent-purple"></div>
+          <h3>Leadership & Communication</h3>
+          <p>Negotiation, team leadership, professional communication, consulting-style presentations, and executive storytelling.</p>
+        </article>
       </div>
     </section>
 
-    <section id="resume" class="section resume">
-      <div>
-        <p class="eyebrow">Resume</p>
-        <h2>Resume and background</h2>
-        <p>Add a PDF resume to <code>assets/resume.pdf</code>, then update this button link.</p>
+    <!-- Resume -->
+    <div class="resume-band">
+      <div class="resume-inner">
+        <div>
+          <p class="eyebrow">Resume</p>
+          <h2>Download my resume</h2>
+          <p>Full background, experience, and credentials in one place.</p>
+        </div>
+        <a class="button primary large" id="resume" href="assets/resume.pdf" target="_blank">Download Resume</a>
       </div>
-      <a class="button primary" href="assets/resume.pdf">Download Resume</a>
-    </section>
+    </div>
 
-    <section id="contact" class="section contact">
-      <p class="eyebrow">Contact</p>
-      <h2>Let’s connect.</h2>
-      <p>Update these links with your email and LinkedIn profile.</p>
-      <div class="button-row">
-        <a class="button primary" href="mailto:your.email@example.com">Email</a>
-        <a class="button secondary" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
-      </div>
-    </section>
+    <!-- Contact -->
+    <div class="contact-band">
+      <section id="contact" class="contact-inner">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's connect.</h2>
+        <p>Open to full-time roles in strategy, analytics, growth, and insights. Based in Minneapolis — open to relocation.</p>
+        <div class="button-row">
+          <a class="button primary large" href="mailto:boerholtz99@gmail.com">Email Me</a>
+          <a class="button secondary large" href="https://www.linkedin.com/in/bo-erholtz/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </section>
+    </div>
+
   </main>
 
   <footer class="footer">
-    <p>© 2026 Bo Erholtz</p>
+    <p>© 2026 Bo Erholtz · Minneapolis, MN</p>
   </footer>
 
   <script src="script.js"></script>
