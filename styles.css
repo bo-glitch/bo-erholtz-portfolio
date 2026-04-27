@@ -208,31 +208,31 @@ h2 {
 .hero-photo-wrap {
   position: relative;
   display: flex;
-  justify-content: center;
-  align-items: flex-end;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .hero-photo-bg {
   position: absolute;
-  top: 20px;
-  left: 20px;
-  right: -20px;
-  bottom: -20px;
+  top: 24px;
+  right: -24px;
+  bottom: -24px;
+  left: 40px;
   background: #e8eedb;
-  border-radius: 28px;
+  border-radius: 24px;
   z-index: 0;
 }
 
 .hero-photo {
   position: relative;
   z-index: 1;
-  width: 100%;
-  max-width: 400px;
-  aspect-ratio: 4 / 5;
+  width: 320px;
+  height: 400px;
   object-fit: cover;
   object-position: center top;
-  border-radius: 22px;
-  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.16);
+  border-radius: 20px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.14);
+  flex-shrink: 0;
 }
 
 /* === Tools Band === */
@@ -656,8 +656,8 @@ h2 {
   .hero-inner {
     grid-template-columns: 1fr;
     min-height: auto;
-    padding-top: 3rem;
-    gap: 2.5rem;
+    padding-top: 3.5rem;
+    gap: 2rem;
   }
 
   .hero-photo-wrap {
@@ -665,12 +665,14 @@ h2 {
     justify-content: flex-start;
   }
 
-  .hero-photo {
-    max-width: 240px;
-    aspect-ratio: 1 / 1;
-  }
-
   .hero-photo-bg { display: none; }
+
+  .hero-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+  }
 
   .about-grid {
     grid-template-columns: 1fr;
