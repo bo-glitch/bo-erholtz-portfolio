@@ -109,46 +109,52 @@
       </div>
       <div class="project-grid">
 
-        <article class="project-card">
+        <article class="project-card" data-project="recruiting" role="button" tabindex="0">
           <span class="tag">Corporate Strategy</span>
           <h3>National Recruiting Market Strategy</h3>
           <p>Built a market prioritization framework to identify strong U.S. recruiting markets using labor, wage, growth, and demand signals. Delivered recommendations to Daikin Applied leadership.</p>
           <small>Excel · labor market research · market prioritization</small>
+          <span class="card-cta">View project →</span>
         </article>
 
-        <article class="project-card">
+        <article class="project-card" data-project="llm" role="button" tabindex="0">
           <span class="tag">Analytics</span>
           <h3>LLM Consumer Behavior Analytics</h3>
           <p>Analyzed large-scale digital behavior data to examine how generative AI adoption shifted consumer app usage patterns across cohorts.</p>
           <small>R · cohort analysis · data visualization</small>
+          <span class="card-cta">View project →</span>
         </article>
 
-        <article class="project-card">
+        <article class="project-card" data-project="rotation" role="button" tabindex="0">
           <span class="tag">Entrepreneurship</span>
           <h3>Rotation: Business Plan & Investor Pitch</h3>
           <p>Developed a venture-backed startup concept for a consumer mobile app focused on wardrobe analytics. Built full financial projections, pricing strategy, valuation, and go-to-market plan.</p>
           <small>Financial modeling · business planning · GTM strategy</small>
+          <span class="card-cta">View pitch deck →</span>
         </article>
 
-        <article class="project-card">
+        <article class="project-card" data-project="target" role="button" tabindex="0">
           <span class="tag">Consumer Research</span>
           <h3>Target Retail Theft & Customer Experience</h3>
           <p>Mixed-methods study on how theft prevention measures impact shopper behavior. Used ethnographic observation, interviews, and a Qualtrics survey to develop store layout and trust recommendations.</p>
           <small>Qualtrics · ethnographic research · consumer insights</small>
+          <span class="card-cta">View project →</span>
         </article>
 
-        <article class="project-card">
+        <article class="project-card" data-project="spinify" role="button" tabindex="0">
           <span class="tag">Consulting</span>
           <h3>Level Up with Spinify — U.S. Bank</h3>
           <p>Consulting proposal for U.S. Bank addressing post-pandemic employee engagement decline. Benchmarked competitors, built three employee personas, and proposed an AI-driven gamification strategy with a one-year pilot plan and ROI analysis.</p>
           <small>Competitor benchmarking · persona development · strategy</small>
+          <span class="card-cta">View project →</span>
         </article>
 
-        <article class="project-card">
+        <article class="project-card" data-project="cidm" role="button" tabindex="0">
           <span class="tag">Strategic Consulting</span>
           <h3>Strengthening CIDM</h3>
           <p>Co-authored a strategic consulting report re-envisioning the Community for Improving Diagnosis in Medicine. Led environmental analysis, developed a new brand identity, financial sustainability plan, and leadership framework.</p>
           <small>Environmental analysis · brand strategy · financial planning</small>
+          <span class="card-cta">View project →</span>
         </article>
 
       </div>
@@ -295,6 +301,14 @@
     </div>
 
   </main>
+
+  <!-- Project Modal -->
+  <div class="modal-overlay" id="projectModal" aria-hidden="true">
+    <div class="modal" role="dialog">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <div class="modal-content" id="modalContent"></div>
+    </div>
+  </div>
 
   <footer class="footer">
     <p>© 2026 Bo Erholtz · Minneapolis, MN</p>
