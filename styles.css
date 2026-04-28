@@ -4,7 +4,7 @@ html { scroll-behavior: smooth; }
 
 body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  background: #ffffff;
+  background: #fbfbf8;
   color: #111827;
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
@@ -15,9 +15,11 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* === Design Tokens === */
 :root {
-  --green:       #4a5520;
+  --green:       #3f4a1d;
   --green-light: #f0f3e8;
   --green-mid:   #dde5c4;
+  --blue:        #28527a;
+  --clay:        #9f5b3d;
   --ink:         #111827;
   --ink-2:       #374151;
   --ink-3:       #6b7280;
@@ -26,9 +28,9 @@ img { max-width: 100%; height: auto; display: block; }
   --bg:          #ffffff;
   --bg-alt:      #f8f8f6;
   --dark:        #0f1117;
-  --radius-sm:   8px;
-  --radius-md:   14px;
-  --radius-lg:   20px;
+  --radius-sm:   6px;
+  --radius-md:   8px;
+  --radius-lg:   8px;
 }
 
 /* === Nav === */
@@ -55,7 +57,7 @@ img { max-width: 100%; height: auto; display: block; }
   text-decoration: none;
   font-weight: 700;
   font-size: 1rem;
-  letter-spacing: -0.01em;
+  letter-spacing: 0;
   color: var(--ink);
 }
 
@@ -92,9 +94,9 @@ img { max-width: 100%; height: auto; display: block; }
 }
 
 h2 {
-  font-size: clamp(1.9rem, 3vw, 2.6rem);
+  font-size: 2.35rem;
   line-height: 1.12;
-  letter-spacing: -0.03em;
+  letter-spacing: 0;
   margin-bottom: 1rem;
   color: var(--ink);
 }
@@ -121,7 +123,7 @@ h2 {
   display: inline-block;
   transition: all 0.18s;
   cursor: pointer;
-  letter-spacing: -0.01em;
+  letter-spacing: 0;
 }
 
 .button.large {
@@ -161,7 +163,10 @@ h2 {
 /* === Hero === */
 .hero-section {
   padding: 0 2rem;
-  background: var(--bg);
+  background:
+    linear-gradient(90deg, rgba(63, 74, 29, 0.08) 0 1px, transparent 1px 100%),
+    linear-gradient(180deg, #fbfbf8 0%, #ffffff 86%);
+  background-size: 76px 76px, auto;
 }
 
 .hero-inner {
@@ -181,9 +186,9 @@ h2 {
 }
 
 .hero-copy h1 {
-  font-size: clamp(2.6rem, 4.5vw, 4rem);
+  font-size: 4rem;
   line-height: 1.06;
-  letter-spacing: -0.04em;
+  letter-spacing: 0;
   margin: 0.5rem 0 1.4rem;
   color: var(--ink);
 }
@@ -199,7 +204,7 @@ h2 {
 .hero-stats {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1.6rem;
   margin-top: 2.25rem;
   padding-top: 2rem;
   border-top: 1px solid var(--border);
@@ -207,8 +212,8 @@ h2 {
 
 .hero-stat strong {
   display: block;
-  font-size: 1.75rem;
-  letter-spacing: -0.045em;
+  font-size: 1.35rem;
+  letter-spacing: 0;
   color: var(--ink);
   line-height: 1;
   margin-bottom: 0.25rem;
@@ -244,7 +249,7 @@ h2 {
   bottom: -24px;
   left: 40px;
   background: var(--green-light);
-  border-radius: 20px;
+  border-radius: var(--radius-md);
   z-index: 0;
 }
 
@@ -255,24 +260,25 @@ h2 {
   height: 400px;
   object-fit: cover;
   object-position: center top;
-  border-radius: 16px;
-  box-shadow: 0 20px 56px rgba(0, 0, 0, 0.12);
+  border-radius: var(--radius-md);
+  box-shadow: 0 18px 48px rgba(17, 24, 39, 0.16);
   flex-shrink: 0;
+  filter: saturate(0.95) contrast(1.02);
 }
 
 /* === Tools Band === */
 .tools-band {
   background: var(--dark);
-  padding: 1.1rem 2rem;
+  padding: 1.25rem 2rem;
 }
 
 .tools-inner {
   max-width: 1120px;
   margin: 0 auto;
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  align-items: start;
   gap: 2rem;
-  flex-wrap: wrap;
 }
 
 .tools-label {
@@ -295,7 +301,7 @@ h2 {
   background: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.1);
   padding: 0.25rem 0.75rem;
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   font-weight: 500;
   color: #d1d5db;
   letter-spacing: 0.01em;
@@ -303,10 +309,10 @@ h2 {
 
 /* === About === */
 .about-headline {
-  font-size: clamp(1.9rem, 3vw, 2.6rem);
+  font-size: 2.35rem;
   max-width: 520px;
   margin-bottom: 3rem;
-  letter-spacing: -0.03em;
+  letter-spacing: 0;
   line-height: 1.12;
 }
 
@@ -349,16 +355,19 @@ h2 {
 .about-card-bar {
   width: 28px;
   height: 3px;
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   margin-bottom: 0.8rem;
   background: var(--green);
 }
+
+.bar-blue { background: var(--blue); }
+.bar-amber { background: var(--clay); }
 
 .about-card h3 {
   font-size: 0.93rem;
   font-weight: 700;
   margin-bottom: 0.3rem;
-  letter-spacing: -0.01em;
+  letter-spacing: 0;
   color: var(--ink);
 }
 
@@ -369,10 +378,64 @@ h2 {
 }
 
 /* === Project Grid === */
+.work-nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+  margin: -1rem 0 4rem;
+}
+
+.work-nav a {
+  min-height: 100%;
+  text-decoration: none;
+  color: var(--ink);
+  border: 1px solid var(--border);
+  background: #ffffff;
+  border-radius: var(--radius-md);
+  padding: 0.9rem 1rem;
+  font-size: 0.82rem;
+  line-height: 1.35;
+  font-weight: 700;
+  transition: border-color 0.18s, box-shadow 0.18s, transform 0.18s;
+}
+
+.work-nav a:hover {
+  border-color: var(--green-mid);
+  box-shadow: 0 8px 22px rgba(17, 24, 39, 0.06);
+  transform: translateY(-2px);
+}
+
+.work-clusters {
+  display: flex;
+  flex-direction: column;
+  gap: 4.75rem;
+}
+
+.work-cluster {
+  scroll-margin-top: 6rem;
+}
+
+.cluster-heading {
+  max-width: 650px;
+  margin-bottom: 1.4rem;
+}
+
+.cluster-heading h3 {
+  color: var(--ink);
+  font-size: 1.35rem;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
+}
+
+.single-project-grid {
+  grid-template-columns: minmax(0, 1fr);
+  max-width: 560px;
 }
 
 .project-card {
@@ -397,7 +460,7 @@ h2 {
   background: var(--green-light);
   color: var(--green);
   padding: 0.25rem 0.6rem;
-  border-radius: 999px;
+  border-radius: var(--radius-sm);
   margin-bottom: 0.75rem;
   font-weight: 700;
   letter-spacing: 0.05em;
@@ -409,7 +472,7 @@ h2 {
   font-size: 1rem;
   font-weight: 700;
   margin-bottom: 0.6rem;
-  letter-spacing: -0.015em;
+  letter-spacing: 0;
   line-height: 1.3;
   color: var(--ink);
 }
@@ -480,7 +543,7 @@ h2 {
   font-size: 1rem;
   font-weight: 700;
   margin-bottom: 0.2rem;
-  letter-spacing: -0.015em;
+  letter-spacing: 0;
   color: var(--ink);
 }
 
@@ -526,15 +589,15 @@ h2 {
 }
 
 .accent-green  { background: var(--green); }
-.accent-blue   { background: #2563eb; }
-.accent-amber  { background: #d97706; }
-.accent-purple { background: #7c3aed; }
+.accent-blue   { background: var(--blue); }
+.accent-amber  { background: var(--clay); }
+.accent-purple { background: #5f4b8b; }
 
 .course-card h3 {
   font-size: 1rem;
   font-weight: 700;
   margin: 0.6rem 0 1rem;
-  letter-spacing: -0.015em;
+  letter-spacing: 0;
   color: var(--ink);
 }
 
@@ -606,12 +669,12 @@ h2 {
   text-align: center;
 }
 
-.contact-band .eyebrow { color: #86efac; }
+.contact-band .eyebrow { color: #c7d0b5; }
 
 .contact-inner h2 {
   color: #f9fafb;
   margin-bottom: 0.75rem;
-  font-size: clamp(2rem, 4vw, 3rem);
+  font-size: 2.7rem;
 }
 
 .contact-inner p {
@@ -689,7 +752,7 @@ h2 {
   width: 100%;
   max-width: 760px;
   max-height: 90vh;
-  border-radius: 20px 20px 0 0;
+  border-radius: var(--radius-md) var(--radius-md) 0 0;
   overflow-y: auto;
   padding: 2.5rem 2.5rem 3rem;
   position: relative;
@@ -734,9 +797,9 @@ h2 {
 }
 
 .modal-header h2 {
-  font-size: clamp(1.4rem, 3vw, 1.9rem);
+  font-size: 1.8rem;
   margin-bottom: 0.5rem;
-  letter-spacing: -0.025em;
+  letter-spacing: 0;
 }
 
 .modal-tools {
@@ -828,6 +891,11 @@ h2 {
 
 /* === Responsive === */
 @media (max-width: 960px) {
+  h2,
+  .about-headline {
+    font-size: 2.1rem;
+  }
+
   .hero-inner {
     grid-template-columns: 1fr;
     min-height: auto;
@@ -849,6 +917,10 @@ h2 {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   }
 
+  .hero-copy h1 {
+    font-size: 3.15rem;
+  }
+
   .about-grid {
     grid-template-columns: 1fr;
     gap: 3rem;
@@ -856,6 +928,15 @@ h2 {
 
   .project-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .work-nav {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tools-inner {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
   }
 
   .resume-inner {
@@ -869,12 +950,46 @@ h2 {
 
   .section { padding: 4rem 1.25rem; }
 
+  h2,
+  .about-headline {
+    font-size: 1.9rem;
+  }
+
+  .hero-section {
+    padding: 0 1.25rem;
+    background-size: 54px 54px, auto;
+  }
+
+  .hero-copy h1 {
+    font-size: 2.65rem;
+  }
+
+  .hero-text {
+    font-size: 0.98rem;
+  }
+
+  .contact-inner h2 {
+    font-size: 2.25rem;
+  }
+
   .project-grid,
-  .course-grid {
+  .course-grid,
+  .work-nav {
     grid-template-columns: 1fr;
   }
 
-  .hero-stats { gap: 1.5rem; }
+  .hero-stats {
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .hero-stat-divider {
+    display: none;
+  }
+
+  .work-clusters {
+    gap: 3.5rem;
+  }
 
   .tools-band { padding: 1rem 1.25rem; }
   .resume-band { padding: 3rem 1.25rem; }
