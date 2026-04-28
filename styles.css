@@ -434,8 +434,7 @@ h2 {
 }
 
 .single-project-grid {
-  grid-template-columns: minmax(0, 1fr);
-  max-width: 560px;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .project-card {
