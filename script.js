@@ -67,7 +67,7 @@ const projects = {
     tag: 'Data Visualization',
     title: 'TCLoony Challenge Dashboard Analysis',
     tools: 'Tableau · Excel · segmentation · revenue analysis',
-    overview: 'This project used Twin Cities Motion data from the TC Loony Challenge to answer two connected business questions: how should marketing target the right participant segments, and how could the event increase registration revenue? We created two interactive dashboards for different decision-makers: a Director of Marketing and a Director of Finance.',
+    overview: 'This project used Twin Cities Motion data from the TC Loony Challenge to answer two connected business questions: how should marketing target the right participant segments, and how could the event increase registration revenue? The final deliverable included two interactive dashboards for different decision-makers: a Director of Marketing and a Director of Finance.',
     sections: [
       {
         heading: 'Approach',
@@ -98,7 +98,7 @@ const projects = {
     pdf: 'assets/rotation-pitch.pdf',
     sections: [
       {
-        heading: 'What We Built',
+        heading: 'What I Built',
         items: [
           'Built a business plan with market sizing, competitive landscape, positioning, and target customer logic',
           'Created a 3-year financial model with unit economics, revenue assumptions, and valuation logic',
